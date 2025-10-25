@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Argel Active — Landing</title>
+    <title>Argel Active — My Tech Journey</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
@@ -27,8 +27,25 @@
           transform: translateY(0);
         }
       }
+      .nav-underline {
+        position: relative;
+      }
+      .nav-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #22d3ee;
+        transition: width 0.3s;
+      }
+      .nav-underline:hover::after {
+        width: 100%;
+      }
     </style>
   </head>
+
   <body class="bg-slate-900 text-slate-100 min-h-screen">
     <!-- NAV -->
     <header class="backdrop-blur-sm bg-slate-800/40 sticky top-0 z-30">
@@ -44,7 +61,7 @@
           <div>
             <div class="text-lg font-semibold text-cyan-300">Argel Active</div>
             <div class="text-xs text-slate-400 -mt-1">
-              Digital · Athletic · Curious
+              HTML · CSS · Git · Tailwind
             </div>
           </div>
         </a>
@@ -52,23 +69,32 @@
         <nav>
           <ul class="flex gap-6 text-slate-300">
             <li>
-              <a href="index.html" class="hover:text-cyan-300 transition"
-                >Welcome</a
+              <a href="index.html" class="nav-underline hover:text-cyan-300"
+                >Home</a
               >
             </li>
             <li>
-              <a href="techJourney.html" class="hover:text-cyan-300 transition"
-                >Tech Journey</a
+              <a href="html.html" class="nav-underline hover:text-cyan-300"
+                >HTML</a
               >
             </li>
             <li>
-              <a href="activeLife.html" class="hover:text-cyan-300 transition"
-                >Active Life</a
+              <a
+                href="css-styling.html"
+                class="nav-underline hover:text-cyan-300"
+                >CSS</a
               >
             </li>
             <li>
-              <a href="travelSpots.html" class="hover:text-cyan-300 transition"
-                >Travel Spots</a
+              <a href="tailwind.html" class="nav-underline hover:text-cyan-300"
+                >Tailwind</a
+              >
+            </li>
+            <li>
+              <a
+                href="techJourney.html"
+                class="nav-underline hover:text-cyan-300"
+                >My Journey</a
               >
             </li>
           </ul>
@@ -76,49 +102,37 @@
       </div>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <main class="max-w-5xl mx-auto px-5 py-12 fade-in">
       <section class="grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h1
             class="text-4xl md:text-5xl font-extrabold text-slate-100 leading-tight"
           >
-            Argel — <span class="text-cyan-400">Active & Digital</span>
+            Argel — <span class="text-cyan-400">Tech-Focused Student</span>
           </h1>
           <p class="mt-4 text-slate-300 max-w-xl">
-            I’m a 19-year-old Information Systems student who balances code and
-            cardio. This is where I share my tech projects, training moments,
-            and the places I explore. Designed for class: clean HTML structures,
-            Tailwind styling, and responsive layout.
+            I’m a 19-year-old Information Systems student who loves exploring
+            how technology and design meet. My journey in web development
+            revolves around mastering <span class="text-cyan-300">HTML</span>,
+            <span class="text-cyan-300">CSS</span>,
+            <span class="text-cyan-300">Git</span>, and
+            <span class="text-cyan-300">Tailwind</span>.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
             <a
-              href="techJourney.html"
-              class="inline-flex items-center gap-2 bg-cyan-500/95 hover:bg-cyan-400 text-slate-900 px-4 py-2 rounded-full font-semibold transition shadow"
-              >View Tech Journey</a
+              href="#tech-journey"
+              class="inline-flex items-center gap-2 bg-cyan-500/95 hover:bg-cyan-400 text-slate-900 px-5 py-2.5 rounded-full font-semibold transition shadow hover:shadow-cyan-400/40 hover:-translate-y-1"
             >
+              View My Tech Journey
+            </a>
             <a
-              href="activeLife.html"
-              class="inline-flex items-center gap-2 border border-slate-700 hover:border-cyan-400 px-4 py-2 rounded-full text-slate-200 transition"
-              >See Active Life</a
+              href="#projects"
+              class="inline-flex items-center gap-2 border border-slate-700 hover:border-cyan-400 px-5 py-2.5 rounded-full text-slate-200 transition hover:text-cyan-300 hover:-translate-y-1"
             >
-            <a
-              href="travelSpots.html"
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-slate-300 hover:text-cyan-300 transition"
-              >Travel Spots</a
-            >
-          </div>
-
-          <div class="mt-8 flex gap-4 text-sm text-slate-400">
-            <div class="flex items-start gap-2">
-              <div class="w-2.5 h-2.5 bg-cyan-400 rounded-full mt-1"></div>
-              <div>2nd Year — BS Information Systems</div>
-            </div>
-            <div class="flex items-start gap-2">
-              <div class="w-2.5 h-2.5 bg-cyan-400 rounded-full mt-1"></div>
-              <div>Active: gym, running, cycling</div>
-            </div>
+              Projects
+            </a>
           </div>
         </div>
 
@@ -134,51 +148,110 @@
             <div class="p-4">
               <h3 class="text-lg font-semibold text-cyan-300">Snapshot</h3>
               <p class="mt-2 text-slate-300 text-sm">
-                A quick glimpse — tech, travel, and the active bits that keep me
-                going.
+                A peek into my growth as a tech learner.
               </p>
             </div>
           </div>
-
-          <div
-            class="absolute -left-6 -bottom-6 w-40 h-40 rounded-2xl bg-gradient-to-br from-sky-600/30 to-cyan-400/20 border border-cyan-400/10 blur-sm"
-          ></div>
         </div>
       </section>
 
-      <!-- QUICK HIGHLIGHTS -->
-      <section class="mt-12 grid md:grid-cols-3 gap-6">
-        <article
-          class="bg-slate-800/60 p-5 rounded-2xl shadow border border-slate-700/40 hover:scale-102 transition"
-        >
-          <h4 class="font-semibold text-cyan-300">Tech</h4>
-          <p class="mt-2 text-slate-300 text-sm">
-            HTML, CSS, Tailwind, Git — projects and notes from my learning
-            journey.
-          </p>
-        </article>
+      <!-- TECH JOURNEY SECTION -->
+      <section id="tech-journey" class="mt-20">
+        <h2 class="text-3xl font-bold text-cyan-300">My Tech Journey</h2>
+        <p class="mt-3 text-slate-300">
+          Here’s how I’ve explored and applied key technologies as an aspiring
+          developer:
+        </p>
 
-        <article
-          class="bg-slate-800/60 p-5 rounded-2xl shadow border border-slate-700/40 hover:scale-102 transition"
-        >
-          <h4 class="font-semibold text-cyan-300">Active</h4>
-          <p class="mt-2 text-slate-300 text-sm">
-            Training routines, sports highlights, and progress snapshots.
-          </p>
-        </article>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-slate-800/60 p-5 rounded-2xl border border-slate-700/40"
+          >
+            <h4 class="font-semibold text-cyan-300 text-lg">HTML</h4>
+            <p class="mt-2 text-slate-300 text-sm">
+              The foundation of web pages — where structure begins. I learned
+              how to use semantic elements, forms, and tables effectively.
+            </p>
+            <img
+              src="midterm.image/fullstack-dankicode ffc.jfif"
+              alt="HTML project"
+              class="mt-3 w-full h-44 object-cover rounded-lg hover:scale-105 transition"
+            />
+          </div>
 
-        <article
-          class="bg-slate-800/60 p-5 rounded-2xl shadow border border-slate-700/40 hover:scale-102 transition"
+          <div
+            class="bg-slate-800/60 p-5 rounded-2xl border border-slate-700/40"
+          >
+            <h4 class="font-semibold text-cyan-300 text-lg">CSS</h4>
+            <p class="mt-2 text-slate-300 text-sm">
+              Styling comes alive here. I explored how to layout, color, and
+              animate my pages — including responsive web design.
+            </p>
+            <img
+              src="midterm.image/IT css html.jfif"
+              alt="CSS styling"
+              class="mt-3 w-full h-44 object-cover rounded-lg hover:scale-105 transition"
+            />
+          </div>
+
+          <div
+            class="bg-slate-800/60 p-5 rounded-2xl border border-slate-700/40"
+          >
+            <h4 class="font-semibold text-cyan-300 text-lg">Tailwind & Git</h4>
+            <p class="mt-2 text-slate-300 text-sm">
+              Tailwind for quick design and Git for collaboration. I’ve learned
+              how to push projects, manage branches, and track my code changes.
+            </p>
+            <img
+              src="midterm.image/Tailwind CSS Grid_ The Ultimate Cheat Sheet (2023).jfif"
+              alt="Git and Tailwind workflow"
+              class="mt-3 w-full h-44 object-cover rounded-lg hover:scale-105 transition"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS TABLE -->
+      <section id="projects" class="mt-16">
+        <h2 class="text-3xl font-bold text-cyan-300 mb-4">Mini Projects</h2>
+        <div
+          class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/40 overflow-x-auto"
         >
-          <h4 class="font-semibold text-cyan-300">Travel</h4>
-          <p class="mt-2 text-slate-300 text-sm">
-            Places I’ve been and short notes on each trip.
-          </p>
-        </article>
+          <table class="min-w-full text-sm border-collapse">
+            <thead>
+              <tr class="text-left text-slate-300/80">
+                <th class="px-3 py-2">Project</th>
+                <th class="px-3 py-2">Technology</th>
+                <th class="px-3 py-2">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-slate-700/50">
+                <td class="px-3 py-3 text-slate-100">Personal Blog</td>
+                <td class="px-3 py-3 text-slate-300">HTML, Tailwind</td>
+                <td class="px-3 py-3 text-cyan-300 font-medium">Ongoing</td>
+              </tr>
+              <tr class="border-t border-slate-700/50">
+                <td class="px-3 py-3 text-slate-100">CSS Portfolio Layout</td>
+                <td class="px-3 py-3 text-slate-300">HTML, CSS</td>
+                <td class="px-3 py-3 text-slate-300">Planned</td>
+              </tr>
+              <tr class="border-t border-slate-700/50">
+                <td class="px-3 py-3 text-slate-100">
+                  GitHub Repository Setup
+                </td>
+                <td class="px-3 py-3 text-slate-300">Git, GitHub</td>
+                <td class="px-3 py-3 text-slate-300">Done</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer class="border-t border-slate-800/50 text-slate-500 text-sm py-6">
+    <footer
+      class="border-t border-slate-800/50 text-slate-500 text-sm py-6 mt-10"
+    >
       <div class="max-w-5xl mx-auto px-5 text-center">
         For academic submission — Argel Active • 2025
       </div>
