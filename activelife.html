@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Argel Active — Active Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+      .fade-in {
+        animation: fadeIn 420ms ease both;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-slate-900 text-slate-100 min-h-screen">
+    <!-- NAV -->
+    <header class="backdrop-blur-sm bg-slate-800/40 sticky top-0 z-30">
+      <div
+        class="max-w-5xl mx-auto flex items-center justify-between py-4 px-5"
+      >
+        <a href="index.html" class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-sky-500 flex items-center justify-center text-slate-900 font-bold"
+          >
+            A
+          </div>
+          <div>
+            <div class="text-lg font-semibold text-cyan-300">Argel Active</div>
+            <div class="text-xs text-slate-400 -mt-1">Move · Train · Share</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="flex gap-6 text-slate-300">
+            <li>
+              <a href="index.html" class="hover:text-cyan-300 transition"
+                >Welcome</a
+              >
+            </li>
+            <li>
+              <a href="techJourney.html" class="hover:text-cyan-300 transition"
+                >Tech Journey</a
+              >
+            </li>
+            <li>
+              <a href="activeLife.html" class="hover:text-cyan-300 transition"
+                >Active Life</a
+              >
+            </li>
+            <li>
+              <a href="travelSpots.html" class="hover:text-cyan-300 transition"
+                >Travel Spots</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-5 py-10 fade-in">
+      <h2 class="text-3xl font-bold text-cyan-300">Active Life</h2>
+      <p class="mt-2 text-slate-300 max-w-2xl">
+        A record of training sessions, sports, and outdoor trips that keep me
+        active and energized.
+      </p>
+
+      <!-- Gallery -->
+      <section class="mt-6 grid md:grid-cols-3 gap-6">
+        <article
+          class="bg-slate-800/50 p-3 rounded-2xl border border-slate-700/40"
+        >
+          <img
+            src="midterm.image/gym.jpeg.jfif"
+            alt="Gym"
+            class="rounded-lg w-full h-48 object-cover hover:scale-105 transition"
+          />
+          <h4 class="mt-3 text-cyan-300 font-semibold">Gym Sessions</h4>
+          <p class="mt-1 text-slate-300 text-sm">
+            Strength training and routines that help me stay fit between
+            classes.
+          </p>
+        </article>
+
+        <article
+          class="bg-slate-800/50 p-3 rounded-2xl border border-slate-700/40"
+        >
+          <img
+            src="midterm.image/run.jpg.jfif"
+            alt="Running"
+            class="rounded-lg w-full h-48 object-cover hover:scale-105 transition"
+          />
+          <h4 class="mt-3 text-cyan-300 font-semibold">Running</h4>
+          <p class="mt-1 text-slate-300 text-sm">
+            Outdoor runs for endurance — routes, times, and short notes.
+          </p>
+        </article>
+
+        <article
+          class="bg-slate-800/50 p-3 rounded-2xl border border-slate-700/40"
+        >
+          <img
+            src="midterm.image/cyling.jpg.jfif"
+            alt="Biking"
+            class="rounded-lg w-full h-48 object-cover hover:scale-105 transition"
+          />
+          <h4 class="mt-3 text-cyan-300 font-semibold">Cycling & Trails</h4>
+          <p class="mt-1 text-slate-300 text-sm">
+            Weekend rides and trail adventures to unwind and explore.
+          </p>
+        </article>
+      </section>
+
+      <!-- Short timeline / list -->
+      <section
+        class="mt-8 bg-slate-800/50 p-5 rounded-2xl border border-slate-700/40"
+      >
+        <h3 class="text-cyan-300 font-semibold">Active Highlights (recent)</h3>
+        <ol class="mt-3 list-decimal list-inside text-slate-300 space-y-2">
+          <li>Completed 5K run — University Event.</li>
+          <li>Riding my bike around the mountains of cebu.</li>
+          <li>Consistent gym routine: training.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/50 text-slate-500 text-sm py-6">
+      <div class="max-w-5xl mx-auto px-5 text-center">
+        Active Life journal — images and stories.
+      </div>
+    </footer>
+  </body>
+</html>
